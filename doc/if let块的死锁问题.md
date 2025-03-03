@@ -93,6 +93,10 @@ fn main() {
 
 >***`if let` 会保持其持有的变量，即使在 `else` 分支也是可以访问的，所以除非后续不会再获取锁，否则尽量不要在 `if let` 中获取锁***
 
+>***该问题在`Rust 2024` 版本已经不存在，详情见[参考文献](https://doc.rust-lang.org/nightly/edition-guide/rust-2024/temporary-if-let-scope.html)***
+
 ## 参考资料
 
 [Rust's Sneaky Deadlock With `if let` Blocks](https://brooksblog.bearblog.dev/rusts-sneaky-deadlock-with-if-let-blocks/)
+
+[The Rust Edition Guide](https://doc.rust-lang.org/nightly/edition-guide/rust-2024/temporary-if-let-scope.html)
